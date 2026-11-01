@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LensaTua - Konsultasi</title>
+</head>
+<body>
+  <header>
+    <h1>Konsultasi Pemilihan Lensa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="lensa.html">Panduan &amp; Katalog</a></li>
+        <li><a href="kontak.html">Konsultasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Alur Konsultasi</h2>
+      <ol>
+        <li>Isi form dengan data kameramu.</li>
+        <li>Tentukan budget dan minat fotografimu.</li>
+        <li>Kirim form, lalu tunggu rekomendasi lensa yang cocok.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Form Konsultasi</h2>
+      <p>Isi form berikut untuk meminta rekomendasi lensa yang cocok dengan kameramu.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Data Diri</legend>
+          <p>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Kamera Kamu</legend>
+          <p>Jenis kamera:</p>
+          <p>
+            <input type="radio" id="mirrorless" name="kamera" value="mirrorless" required>
+            <label for="mirrorless">Mirrorless</label>
+            <input type="radio" id="dslr" name="kamera" value="dslr">
+            <label for="dslr">DSLR</label>
+          </p>
+          <p>
+            <label for="mount">Mount kamera:</label>
+            <select id="mount" name="mount" required>
+              <option value="">-- Pilih mount --</option>
+              <option value="fuji-x">Fujifilm X</option>
+              <option value="sony-e">Sony E</option>
+              <option value="canon-ef">Canon EF</option>
+              <option value="nikon-f">Nikon F</option>
+            </select>
+          </p>
+          <p>
+            <label for="budget">Budget (Rp):</label>
+            <input type="number" id="budget" name="budget" min="100000" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Minat Fotografi</legend>
+          <p>
+            <input type="checkbox" id="street" name="minat" value="street">
+            <label for="street">Street</label>
+            <input type="checkbox" id="portrait" name="minat" value="portrait">
+            <label for="portrait">Portrait</label>
+            <input type="checkbox" id="landscape" name="minat" value="landscape">
+            <label for="landscape">Landscape</label>
+          </p>
+          <p>
+            <label for="pesan">Pesan tambahan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea>
+          </p>
+        </fieldset>
+
+        <p><button type="submit">Kirim Konsultasi</button></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Pertanyaan yang Sering Diajukan</h2>
+      <h3>Apakah lensa vintage bisa autofocus?</h3>
+      <p>Tidak. Lensa vintage hanya mendukung fokus manual, tetapi fitur focus peaking di kamera sangat membantu.</p>
+      <h3>Apakah semua lensa bisa dipasang di kamera mirrorless?</h3>
+      <p>Hampir semua bisa, selama ada adapter yang sesuai dengan mount lensa dan mount kameramu.</p>
+      <h3>Apakah lensa bekas aman dibeli?</h3>
+      <p>Aman jika diperiksa dengan teliti. Lihat panduan di <a href="index.html">halaman beranda</a> untuk checklist pemeriksaan.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 LensaTua - Tugas Laprak 1 Desain Web</p>
+  </footer>
+</body>
+</html>
